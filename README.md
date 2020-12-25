@@ -14,6 +14,6 @@ mkdir build && mkdir conan-build && cd conan-build
 conan install .. --build
 cd ../build && cmake ..
  ```
-Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
+NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
 
 ![Example 1](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy2.png?raw=true)
