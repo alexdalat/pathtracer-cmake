@@ -7,12 +7,13 @@ A path tracing rendering engine created in C++ with CMake compatibility.
  - [libpng-conan](https://conan.io/center/libpng)
  - [glm-conan](https://conan.io/center/glm)
  
- ### Utilize source with conan
+ ### Build from source
  ```bash
- cd pathtracer-cmake
- mkdir build && cd build
- conan install .. --build
- cmake ..
+cd pathtracer-cmake
+mkdir build && mkdir conan-build && cd conan-build
+conan install .. --build
+cd ../build && cmake ..
  ```
+When executing from source, be sure to have a valid `bin/imgs/` directory for the program to output to.
 
 ![Example 1](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy2.png?raw=true)
