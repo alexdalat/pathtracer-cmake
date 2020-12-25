@@ -1,0 +1,26 @@
+{
+ "options": [
+  [
+   "libpng:api_prefix",
+   "None"
+  ],
+  [
+   "libpng:shared",
+   "False"
+  ],
+  [
+   "zlib:minizip",
+   "False"
+  ],
+  [
+   "zlib:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
