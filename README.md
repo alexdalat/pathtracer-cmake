@@ -16,4 +16,5 @@ cd ../build && cmake ..
  ```
 NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
 
+![Example 2](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy3.png?raw=true)
 ![Example 1](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy2.png?raw=true)
