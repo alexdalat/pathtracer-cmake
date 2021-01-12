@@ -2,10 +2,8 @@
 
 A path tracing rendering engine created in C++ with CMake compatibility.
 
-## Requirements
+## Build Requirements
  - [Conan](https://conan.io/)
- - [libpng-conan](https://conan.io/center/libpng)
- - [glm-conan](https://conan.io/center/glm)
  
  ### Build from source
  ```bash
