@@ -10,7 +10,7 @@ A path tracing rendering engine created in C++ with CMake compatibility.
  ```bash
 cd pathtracer-cmake
 mkdir build && mkdir conan-build && cd conan-build
-conan install .. --build
+conan install .. --build && conan install ..
 cd ../build && cmake ..
  ```
 NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
