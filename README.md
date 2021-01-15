@@ -3,6 +3,7 @@
 A path tracing rendering engine created in C++ with CMake compatibility.
 
 ## Build Requirements
+ - [CMake](https://cmake.org/)
  - [Conan](https://conan.io/)
  
  ### Build from source
