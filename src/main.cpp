@@ -1,47 +1,58 @@
 #include <iostream>
 #include <string>
-#include <ctime>
 #include <cmath>
 #include <future>
 
+#define M_PI 3.14159f
+
 #include <png++/png.hpp>
-#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/glm.hpp>
-#include <glm/gtx/string_cast.hpp>
 
 // project specific
 #include "RenderHelper.h"
 #include "Color.h"
-#include "Sphere.h"
-#include "Triangle.h"
 #include "Plane.h"
-#include "Ray.h"
 #include "Util.h"
 #include "Material.h"
 #include "Camera.h"
 #include "Skybox.h"
 #include "Renderer.h"
-#include "Filter.h"
 #include "Scene.h"
 #include "Rotation.h"
-#include "Data.h"
 #include "Shapes.h"
 
-#define M_PI 3.14159f
-
-const std::string img_output_path = "../imgs/";
+// input paths
 const std::string obj_path = "../../extra/objs/";
+// output paths
+const std::string img_dir = "../imgs/";
+const std::string img_path = img_dir + getFileTimestamp();
 
 void setupScene(Scene *scene);
-
+template <typename T> T input(std::string var_name, T variable) {
+    std::cout << var_name+std::string(" [default = ")+std::to_string(variable)+"]: ";
+    std::string input;
+    std::getline( std::cin, input );
+    if ( !input.empty() ) {
+        std::istringstream stream( input );
+        stream >> variable;
+    }
+    std::cout << std::endl;
+    return variable;
+}
 int main() {
-    int sampling = 250;
-    cout << "Samples: ";
-    cin >> sampling;
+    Renderer renderer;
+    std::cout << "\n";
+    renderer.setSamples(input<int>("Samples", 250));
+    renderer.setWidth(input<int>("Width", 256));
+    renderer.setHeight(input<int>("Height", renderer.width));
+    renderer.setAtrous(input<int>("A-Trous", 2));
+    renderer.setRecursionDepth(input<int>("Recursion", 4));
+    renderer.setThreadCount(renderer.width / 16);
+    renderer.setImagePath(img_path);
+    renderer.setLightLoss(0.2f);
 
-    Scene scene; // scene
-    int width = 512, height = width; // width must be divisible by thread_count
-    Renderer renderer(&scene, width, height, sampling, 64, 16, 0.25f, 0.000001f, 100.f);
+    Scene scene;
+    renderer.setScene(&scene);
     Camera camera(
         glm::vec3(0, 5, 15), // normal: 0, 5, 15 | top-down: 0, 15, 0
         (float)renderer.height / (float)renderer.width,
@@ -55,20 +66,7 @@ int main() {
     );
     scene.setSkybox(&skybox);
     setupScene(&scene);
-
-    std::string path = img_output_path + getFileTimestamp() + ".png";
-    int64_t start = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-    printf("Render started...\n    - %d threads\n    - %d samples\n    - %d max bounces\n    - %dx%d\n    - output: %s\n", renderer.thread_count, renderer.samples, renderer.recursion_depth, renderer.width, renderer.height, path.c_str());
-    png::image<png::rgba_pixel> image(renderer.width, renderer.height);
-    renderThreads(&renderer, &image);
-
-    /* Apply Filter */
-    //vector<vector<double>> filter = getGaussian(5, 5, 10.0);
-    //image = applyFilter(image, filter, 2);
-
-    image.write(path);
-    int64_t end = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-    printf("Rendered in %.2f seconds\n", (double(end) - double(start)) / 1000);
+    render(&renderer); // execute
     return 0;
 }
 
@@ -111,7 +109,7 @@ void setupScene(Scene *scene) {
 
     /** Box 2 (CUBE) **/
     const Material box2mat = Material(0.0, 1.0, 0.0, Color(255, 255, 255));
-    auto box2wallleft = Rect(glm::vec3(0, 0, 3), glm::vec3(1, 0, 1.5), glm::vec3(1, 3, 1.5),glm::vec3(0, 3, 3), box2mat);
+    auto box2wallleft = Rect(glm::vec3(0, 0, 3), glm::vec3(1, 0, 0), glm::vec3(1, 3, 0),glm::vec3(0, 3, 3), box2mat);
     scene->addObjects(box2wallleft); // left
     auto box2wallright = Rect(glm::vec3(3, 0, 4), glm::vec3(4, 0, 1), glm::vec3(4, 3, 1),glm::vec3(3, 3, 4), box2mat);
     scene->addObjects(box2wallright); // right

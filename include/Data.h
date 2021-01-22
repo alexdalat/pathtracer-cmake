@@ -4,7 +4,7 @@
 struct Intersection {
     bool hit;
     double distance;
-    glm::vec3 collisionPoint;
+    glm::vec3 point; // collision point
     Object *object;
 };
 

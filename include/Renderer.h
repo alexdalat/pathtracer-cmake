@@ -16,21 +16,27 @@ struct Intersection;
 
 class Renderer {
 public:
-    Scene *scene;
-    int width, height, samples, thread_count, recursion_depth;
-    float light_loss, min_dist, max_dist;
-    float viewport_size, projection_plane_z = 1;
+    Scene *scene = nullptr;
+    int width = 512, height = 512, samples = 250, thread_count = 16, recursion_depth = 8;
+    float light_loss = 0.2f, min_dist = 0.000001f, max_dist = 100.f;
+    int atrous = 0;
+    std::string img_path = "../imgs/";
+    std::vector<glm::vec3> C, N, P;
 
-    Renderer(Scene *scene, int width, int height, int samples, int thread_count = 1, int recursion_depth = 2,
-             float light_loss = 0.2, float min_dist = 0.001, float max_dist = 10);
+    Renderer() {};
+    Color trace(Ray ray, int depth = 0);
 
-    Color renderPixel(Ray ray, int depth = 0);
-
-    Intersection ClosestIntersection(Ray *ray);
-
-    glm::vec3 CanvasToViewport(glm::vec2 p2d);
-
-    void SetScene(Scene &scene);
+    void setSamples(int val) { this->samples = std::move(val); }
+    void setWidth(int val) { this->width = std::move(val); }
+    void setHeight(int val) { this->height = std::move(val); }
+    void setThreadCount(int val) { this->thread_count = std::move(val); }
+    void setRecursionDepth(int val) { this->recursion_depth = std::move(val); }
+    void setLightLoss(float val) { this->light_loss = std::move(val); }
+    void setMinDist(float val) { this->min_dist = std::move(val); }
+    void setMaxDist(float val) { this->max_dist = std::move(val); }
+    void setImagePath(std::string val) { this->img_path = std::move(val); }
+    void setAtrous(bool val) { this->atrous = std::move(val); C.resize(width*height, glm::vec3(0)); N.resize(width*height, glm::vec3(0)); P.resize(width*height, glm::vec3(0)); }
+    void setScene(Scene *scene) { this->scene = scene; }
 };
 
 #endif
