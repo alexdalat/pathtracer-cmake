@@ -18,6 +18,6 @@ NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the e
 
 
 <div>
-  <img src="/Trophies/Trophy2.png?raw=true" width="400" height="400" />
-  <img src="https://github.com/alexdalat/pathtracer-cmake/blob/master/Trophies/Bear%20Spin.gif?raw=true" width="400" height="400" /> 
+  <img src="/Trophies/Trophy2.png?raw=true" width="60%" height="60%" />
+  <!--<img src="https://github.com/alexdalat/pathtracer-cmake/blob/master/Trophies/Bear%20Spin.gif?raw=true" width="610" height="350" />-->
 </div>
