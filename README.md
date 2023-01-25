@@ -15,5 +15,9 @@ cd ../build && cmake ..
  ```
 NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
 
-<!--![Example 2](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy3.png?raw=true)-->
-![Example 1](https://github.com/Xeladarocks/pathtracer-cmake/blob/master/imgs/Trophy3.png?raw=true)
+
+
+<div>
+  <img src="/Trophies/Trophy2.png?raw=true" width="400" height="400" />
+  <img src="https://github.com/alexdalat/pathtracer-cmake/blob/master/Trophies/Bear%20Spin.gif?raw=true" width="400" height="400" /> 
+</div>
