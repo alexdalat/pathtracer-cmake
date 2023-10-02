@@ -1,8 +1,4 @@
 #include "Color.h"
-#include <string>
-#include <algorithm> // min/max
-
-using namespace std;
 
 Color::Color() {
     this->r = 0.0f;

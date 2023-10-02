@@ -1,5 +1,4 @@
-#ifndef PATHTRACER_CMAKE_SHAPES_H
-#define PATHTRACER_CMAKE_SHAPES_H
+#pragma once
 
 static vector<unique_ptr<Object>> Rect(glm::vec3 p1, glm::vec3 p2, glm::vec3 p3, glm::vec3 p4, Material mat) {
     vector<unique_ptr<Object>> list;
@@ -13,5 +12,3 @@ static vector<unique_ptr<Object>> RectPrism(glm::vec3 v1, glm::vec3 v2, Material
     // add 6 rects to list...
     return list;
 }
-
-#endif //PATHTRACER_CMAKE_SHAPES_H

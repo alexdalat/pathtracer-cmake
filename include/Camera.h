@@ -1,16 +1,5 @@
 #pragma once
 
-#ifndef CAMERA_H
-#define CAMERA_H
-
-using namespace std;
-
-#define GLM_ENABLE_EXPERIMENTAL
-
-#include <glm/glm.hpp>
-#include "Util.h"
-#include "Rotation.h"
-
 struct Controls {
     bool w = false;
     bool a = false;
@@ -40,5 +29,3 @@ public:
 
     void update(float deltaTime);
 };
-
-#endif

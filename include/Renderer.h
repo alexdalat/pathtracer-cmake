@@ -1,20 +1,4 @@
 #pragma once
-#ifndef RENDERER_H
-#define RENDERER_H
-using namespace std;
-
-#include "Color.h"
-#include "Scene.h"
-#include "Object.h"
-#include "Ray.h"
-#include <vector>
-#include <optional>
-#include "Animation.h"
-
-class Scene;
-class Animation;
-
-struct Intersection;
 
 class Renderer {
 public:
@@ -40,9 +24,5 @@ public:
     void setMaxDist(float val) { this->max_dist = std::move(val); }
     void setImageDir(std::string val) { this->img_dir = std::move(val); }
     void setImageName(std::string val) { this->img_name = std::move(val); }
-    void setAtrous(bool val) { this->atrous = std::move(val); C.resize(width*height, glm::vec3(0)); N.resize(width*height, glm::vec3(0)); P.resize(width*height, glm::vec3(0)); }
     void setScene(Scene *scene) { this->scene = scene; }
-    void setAnimation(Animation *animation) { this->animation = animation; }
 };
-
-#endif

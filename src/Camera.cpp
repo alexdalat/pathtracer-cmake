@@ -1,9 +1,4 @@
-using namespace std;
-
 #include "Camera.h"
-#include <iostream>
-
-#define M_PI 3.14159f
 
 Camera::Camera(glm::vec3 position, float aspectRatio, float fov, Rotation rotation) {
     this->position = position;

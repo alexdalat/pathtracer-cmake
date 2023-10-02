@@ -1,15 +1,4 @@
 #pragma once
-#ifndef SPHERE_H
-#define SPHERE_H
-using namespace std;
-
-#define GLM_ENABLE_EXPERIMENTAL
-
-#include <glm/glm.hpp>
-#include "Object.h"
-#include "Color.h"
-#include "Material.h"
-#include "Ray.h"
 
 class Sphere : public Object {
 public:
@@ -26,5 +15,3 @@ public:
     Material getMaterial();
     glm::vec3 calculateUVCoordinates(glm::vec3 collisionPoint, glm::vec3 normal);
 };
-
-#endif

@@ -1,9 +1,5 @@
-//
-// Created by xelada on 2/9/20.
-//
 
 #include "Plane.h"
-#include <iostream>
 
 Plane::Plane() {
     normal = glm::vec3();

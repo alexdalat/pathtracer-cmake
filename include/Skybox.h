@@ -1,12 +1,4 @@
 #pragma once
-#ifndef SKYBOX_H
-#define SKYBOX_H
-
-using namespace std;
-
-#define GLM_ENABLE_EXPERIMENTAL
-#include <glm/glm.hpp>
-#include "Color.h"
 
 class Skybox {
 public:
@@ -33,5 +25,3 @@ public:
 
     Color getColorAt(glm::vec3 dir);
 };
-
-#endif

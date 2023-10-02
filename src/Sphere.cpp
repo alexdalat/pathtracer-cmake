@@ -1,12 +1,5 @@
-using namespace std;
 
-#include <Util.h>
-#include <glm/gtx/norm.hpp>
-#include <math.h>
 #include "Sphere.h"
-
-#define M_PI 3.14159
-const float EPSILON = 0.000001f;
 
 Sphere::Sphere() {
     this->position = glm::vec3();

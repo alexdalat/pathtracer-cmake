@@ -1,14 +1,5 @@
-using namespace std;
-
-#include <glm/glm.hpp>
-
-#define GLM_ENABLE_EXPERIMENTAL
-
-#include <glm/gtx/norm.hpp>
-#include <random>
 
 #include "Ray.h"
-#include "Util.h"
 
 Ray::Ray(glm::vec3 origin, glm::vec3 direction) {
     this->origin = origin;

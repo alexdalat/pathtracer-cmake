@@ -1,7 +1,4 @@
-#ifndef PATHTRACER_ROTATION_H
-#define PATHTRACER_ROTATION_H
-
-#include <glm/glm.hpp>
+#pragma once
 
 class Rotation {
 public:
@@ -22,5 +19,3 @@ public:
 
     void updateRollMat();
 };
-
-#endif //PATHTRACER_ROTATION_H

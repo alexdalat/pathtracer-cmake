@@ -1,9 +1,4 @@
-#ifndef PATHTRACER_CMAKE_RENDERHELPER_H
-#define PATHTRACER_CMAKE_RENDERHELPER_H
-
-#include "Renderer.h"
-#include "Atrous.h"
-#include <filesystem>
+#pragma once
 
 void renderThreads(Renderer *renderer, png::image<png::rgba_pixel> *image);
 void drawArray(std::vector<glm::vec3> &arr, std::string img_path, int width, int height);
@@ -79,21 +74,6 @@ void render(Renderer *renderer) {
 
         image.write(renderer->img_dir+renderer->img_name+"-"+std::to_string(i)+".png");
     }
-
-    if(renderer->atrous > 0) {
-        printf("A-Trous denoising started...\n");
-        int64_t start2 = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-
-        std::vector<glm::vec3> F(renderer->width*renderer->height);
-        for(int x = 0; x < F.size(); x++)
-            F[x] = glm::vec3(0);
-        Atrous::ApplyFilter(renderer->width, renderer->height, renderer->C, renderer->N, renderer->P, F, renderer->atrous);
-        Atrous::multiplyArr(F, 255);
-        drawArray(F, renderer->img_dir+renderer->img_name+"-atrous.png", renderer->width, renderer->height);
-
-        int64_t end2 = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-        printf("Denoised in %.2f seconds\n", (double(end2) - double(start2)) / 1000);
-    }
 }
 
 
@@ -129,5 +109,3 @@ void renderThreads(Renderer *renderer, png::image<png::rgba_pixel> *image) {
         }
     }
 }
-
-#endif //PATHTRACER_CMAKE_RENDERHELPER_H

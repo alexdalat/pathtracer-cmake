@@ -1,15 +1,4 @@
 #pragma once
-#ifndef TRIANGLE_H
-#define TRIANGLE_H
-
-using namespace std;
-
-#define GLM_ENABLE_EXPERIMENTAL
-#include <glm/glm.hpp>
-#include "Object.h"
-#include "Color.h"
-#include "Material.h"
-#include "Ray.h"
 
 class Triangle : public Object {
 public:
@@ -24,5 +13,3 @@ public:
     glm::vec3 calculateNormal(glm::vec3 &point, glm::vec3 &dir);
     Material getMaterial();
 };
-
-#endif

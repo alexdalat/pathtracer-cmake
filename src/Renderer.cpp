@@ -1,8 +1,5 @@
-using namespace std;
 
-#include <iostream>
 #include "Renderer.h"
-#include "Data.h"
 
 Color Renderer::trace(Ray ray, int depth) {
     if(depth > this->recursion_depth) return Color(0);

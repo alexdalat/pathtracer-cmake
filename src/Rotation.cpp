@@ -1,8 +1,4 @@
 #include "Rotation.h"
-#include <math.h>
-#include <glm/glm.hpp>
-
-#define M_PI 3.14159f
 
 Rotation::Rotation() {}
 

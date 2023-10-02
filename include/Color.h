@@ -1,11 +1,4 @@
 #pragma once
-#ifndef COLOR_H
-#define COLOR_H
-
-using namespace std;
-
-#include <string>
-#include <vector>
 
 class Color {
 public:
@@ -23,9 +16,7 @@ public:
     Color divide(float f);
     Color divide(Color c);
     Color interpolate(Color c, float f);
-    static Color average(vector<Color> colors);
+    static Color average(std::vector<Color> colors);
     Color clamp();
-    string toString();
+    std::string toString();
 };
-
-#endif

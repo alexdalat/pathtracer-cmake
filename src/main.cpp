@@ -1,11 +1,9 @@
+
 #include <iostream>
 #include <string>
 #include <cmath>
 #include <future>
 
-#define M_PI 3.14159f
-
-#include <png++/png.hpp>
 #include <glm/glm.hpp>
 
 // project specific
@@ -20,13 +18,12 @@
 #include "Scene.h"
 #include "Rotation.h"
 #include "Shapes.h"
-#include "Animation.h"
 
 // input paths
 const std::string obj_path = "../../extra/objs/";
 // output paths
 const std::string img_dir = "../imgs/";
-const std::string img_name = getFileTimestamp();
+const std::string img_name = Util::getFileTimestamp();
 
 void setupScene(Scene *scene);
 template <typename T> T input(std::string var_name, T variable) {
@@ -45,7 +42,6 @@ int main() {
     renderer.setSamples(input<int>("Samples", 1));
     renderer.setWidth(input<int>("Width", 256));
     renderer.setHeight(input<int>("Height", renderer.width));
-    renderer.setAtrous(input<int>("A-Trous", 0));
     renderer.setRecursionDepth(input<int>("Recursion", 1));
     renderer.setThreadCount(renderer.width / 16);
     renderer.setImageDir(img_dir);

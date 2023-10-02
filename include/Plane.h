@@ -1,8 +1,4 @@
-#ifndef PATHTRACER_PLANE_H
-#define PATHTRACER_PLANE_H
-
-#include "Object.h"
-#include <glm/glm.hpp>
+#pragma once
 
 class Plane : public Object {
 public:
@@ -19,5 +15,3 @@ public:
     glm::vec3 calculateNormal(glm::vec3 &point, glm::vec3 &dir);
     Material getMaterial();
 };
-
-#endif //PATHTRACER_PLANE_H
