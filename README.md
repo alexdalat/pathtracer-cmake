@@ -8,9 +8,7 @@ A path tracing rendering engine created in C++.
  ### Build from source
  ```bash
 cd pathtracer-cmake
-# set up directories
-mkdir build
-cd build
+mkdir build && cd build
 cmake ..
 make install .
 ```
