@@ -6,12 +6,3 @@ target_include_directories(${PROJECT_NAME} PUBLIC ../include)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE ${LIBPNG_LIBRARIES} ${ZLIB_LIBRARIES})
 target_include_directories(${PROJECT_NAME} PRIVATE ${LIBPNG_INCLUDE_DIRS} ${ZLIB_INCLUDE_DIRS} glm)
-
-# target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
-
-# set_target_properties( # change output paths
-#     ${PROJECT_NAME} PROPERTIES
-#     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
-#     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
-#     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
-# )
