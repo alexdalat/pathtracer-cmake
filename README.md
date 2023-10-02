@@ -1,22 +1,19 @@
 # pathtracer-cmake
 
-A path tracing rendering engine created in C++ with CMake compatibility.
+A path tracing rendering engine created in C++.
 
 ## Build Requirements
  - [CMake](https://cmake.org/)
- - [Conan](https://conan.io/)
  
  ### Build from source
  ```bash
 cd pathtracer-cmake
 # set up directories
-mkdir build && mkdir conan-build
-# build requirements
-cd conan-build && conan install .. --build=missing
-# build project
-cd ../build && cmake ..
- ```
-NOTE: Be sure to have a valid `bin/imgs/` directory (`../imgs/ relative to the executable`) for the program to output to.
+mkdir build
+cd build
+cmake ..
+make install .
+```
 
 
 
