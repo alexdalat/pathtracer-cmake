@@ -21,7 +21,6 @@ glm::vec3 Skybox::getColorAt(glm::vec3 const& dir) {
   if (this->override) return this->overrideColor;
 
   float dot = glm::dot(this->up, dir);
-  if (dot < 0.0f)
-    return this->sideColor + this->bsColor * std::abs(dot);
+  if (dot < 0.0f) return this->sideColor + this->bsColor * std::abs(dot);
   return this->sideColor + this->tsColor * dot;
 }

@@ -1,25 +1,29 @@
 #include "Renderer.h"
 
 void Renderer::init() {
-
   for (int i = 0; i < this->width * this->height * samples; i++) {
     random_map.push_back(glm::vec2(util::random(), util::random()));
 
     for (int j = 0; j < this->recursion_depth; j++) {
-      random_ray_map.push_back(glm::vec3(util::random(), util::random(), util::random()));
+      random_ray_map.push_back(
+          glm::normalize(glm::vec3(util::random(), util::random(), util::random())));
     }
+  }
 
-    float u = ((float)i + util::random()) / (float)this->width;
-    float v = ((float)i + util::random()) / (float)this->height;
-    ray_map.push_back(this->scene->camera->getRay(u, v));
+  for(int x = 0; x < this->width; x++) {
+    for(int y = 0; y < this->height; y++) {
+      for(int s = 0; s < this->samples; s++) {
+        float u = ((float)x + util::random()) / (float)this->width;
+        float v = ((float)y + util::random()) / (float)this->height;
+        ray_map.push_back(this->scene->camera->getRay(u, v));
+      }
+    }
   }
 }
 
 Renderer::Renderer() {}
 
-Renderer::Renderer(Scene& scene) {
-  this->scene = &scene;
-}
+Renderer::Renderer(Scene& scene) { this->scene = &scene; }
 
 glm::vec3 Renderer::trace(Ray const& ray, int hash, int depth) {
   // max depth reached = dark
@@ -39,8 +43,7 @@ glm::vec3 Renderer::trace(Ray const& ray, int hash, int depth) {
   Material& material = object->material;
 
   glm::vec3 ndir;
-  if (material.diffuse > 0)
-    ndir = Ray::diffuse(normal, random_ray_map[hash]);
+  if (material.diffuse > 0) ndir = Ray::diffuse(normal, random_ray_map[hash]);
 
   if (material.reflectivity > 0) ndir = Ray::reflect(ray, normal);
 
@@ -61,7 +64,7 @@ std::vector<glm::vec3> Renderer::render() {
 
   std::vector<glm::vec3> pixels(this->width * this->height, glm::vec3(0.0f));
 
-  if(this->ray_map.size() == 0 || this->random_map.size() == 0) this->init();
+  if (this->ray_map.size() == 0 || this->random_map.size() == 0) this->init();
 
   for (int x = 0; x < this->width; x++) {
     for (int y = 0; y < this->height; y++) {
@@ -78,11 +81,13 @@ std::vector<glm::vec3> Renderer::render() {
       }
 
       cols /= static_cast<float>(this->samples);
-      //cols = glm::clamp(cols, 0.0f, 1.0f);
+      // cols = glm::clamp(cols, 0.0f, 1.0f);
 
-      int pc = (this->height - y - 1) * this->width + x; // flip y for opengl (draws bottom left)
+      int pc = (this->height - y - 1) * this->width +
+               x;  // flip y for opengl (draws bottom left)
       pixels[pc] = cols;
-      // pixels[pc] = glm::vec3((float)x / (float)this->width, (float)y / (float)this->height, 0.2f); // testing
+      // pixels[pc] = glm::vec3((float)x / (float)this->width, (float)y /
+      // (float)this->height, 0.2f); // testing
     }
   }
   std::cout << "Rendered " << this->width << "x" << this->height << " image in "
