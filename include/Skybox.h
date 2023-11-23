@@ -1,27 +1,26 @@
 #pragma once
 
+#include <glm/glm.hpp>
+
 class Skybox {
-public:
-	glm::vec3 up;
-	Color topColor;
-	Color sideColor;
-	Color bottomColor;
-	bool override;
-	Color overrideColor;
-    float intensity;
+ public:
+  glm::vec3 up;
+  glm::vec3 topColor;
+  glm::vec3 sideColor;
+  glm::vec3 bottomColor;
+  bool override;
+  glm::vec3 overrideColor;
+  float intensity;
 
-    Skybox() {
-        this->up = glm::vec3(0, 1, 0);
-        this->topColor = Color(255.0f, 20.0f, 147.0f);
-        this->sideColor = Color(255.0f, 20.0f, 147.0f);
-        this->bottomColor = Color(255.0f, 255.0f, 255.0f);
-        this->override = false;
-        this->overrideColor = Color(255.0f, 20.0f, 147.0f);
-        this->intensity = 1;
-    }
+  const glm::vec3 defaultColor =
+      glm::vec3(255.0f, 105.0f, 180.0f) / 255.0f;  // hot pink
 
-    Skybox(Color topColor, Color sideColor, Color bottomColor, bool override = false,
-           Color overrideColor = Color(255.0f, 20.0f, 147.0f), float intensity = 1, glm::vec3 up = glm::vec3(0, 1, 0));
+  Skybox(glm::vec3 topColor = glm::vec3(0.0f, 0.0f, 0.0f),
+         glm::vec3 sideColor = glm::vec3(0.0f, 0.0f, 0.0f),
+         glm::vec3 bottomColor = glm::vec3(0.0f, 0.0f, 0.0f),
+         bool override = false,
+         glm::vec3 overrideColor = glm::vec3(1.0f, 0.1f, 0.5f),
+         float intensity = 1, glm::vec3 up = glm::vec3(0, 1, 0));
 
-    Color getColorAt(glm::vec3 dir);
+  glm::vec3 getColorAt(glm::vec3 const& dir);
 };

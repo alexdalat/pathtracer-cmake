@@ -1,28 +1,23 @@
 #pragma once
 
+#include <chrono>
+#include <glm/glm.hpp>
+
+#include "Ray.h"
+#include "Scene.h"
+
 class Renderer {
-public:
-    Scene *scene = nullptr;
-    int width = 512, height = 512, samples = 250, thread_count = 16, recursion_depth = 8;
-    float light_loss = 0.2f, min_dist = 0.000001f, max_dist = 100.f;
-    int atrous = 0;
-    std::string img_dir = "../imgs/";
-    std::string img_name = "image";
-    std::vector<glm::vec3> C, N, P;
-    Animation *animation = nullptr;
+ public:
+  Scene* scene = nullptr;
 
-    Renderer() {};
-    Color trace(Ray ray, int depth = 0);
+  int width = 512, height = 512, samples = 250, recursion_depth = 8;
+  float light_loss = 0.2f, min_dist = 0.000001f, max_dist = 100.f;
 
-    void setSamples(int val) { this->samples = std::move(val); }
-    void setWidth(int val) { this->width = std::move(val); }
-    void setHeight(int val) { this->height = std::move(val); }
-    void setThreadCount(int val) { this->thread_count = std::move(val); }
-    void setRecursionDepth(int val) { this->recursion_depth = std::move(val); }
-    void setLightLoss(float val) { this->light_loss = std::move(val); }
-    void setMinDist(float val) { this->min_dist = std::move(val); }
-    void setMaxDist(float val) { this->max_dist = std::move(val); }
-    void setImageDir(std::string val) { this->img_dir = std::move(val); }
-    void setImageName(std::string val) { this->img_name = std::move(val); }
-    void setScene(Scene *scene) { this->scene = scene; }
+  std::string img_dir = "../imgs/";
+  std::string img_name = "image";
+
+  Renderer(){};
+
+  glm::vec3 trace(Ray const& ray, int depth = 0);
+  void render(std::vector<glm::vec3>& pixels);
 };

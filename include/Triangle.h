@@ -1,15 +1,22 @@
 #pragma once
 
-class Triangle : public Object {
-public:
-    // glm::vec3 position; // from Object
-    glm::vec3 v1, v2, v3;
-    Material material;
-    Color color;
-    //Texture texture;
+#include <glm/glm.hpp>
 
-    Triangle(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3, Material material);
-    float calculateIntersection(Ray *ray);
-    glm::vec3 calculateNormal(glm::vec3 &point, glm::vec3 &dir);
-    Material getMaterial();
+#include "Material.h"
+#include "Object.h"
+#include "Ray.h"
+
+class Triangle : public Object {
+ public:
+
+  Triangle(glm::vec3 const& v1, glm::vec3 const& v2, glm::vec3 const& v3);
+  Triangle(glm::vec3 const& v1, glm::vec3 const& v2, glm::vec3 const& v3, Material const& material);
+
+  float calculateIntersection(Ray const& ray) override;
+  glm::vec3 calculateNormal(glm::vec3 const& point,
+                            glm::vec3 const& dir) override;
+
+ private:
+  glm::vec3 edge1, edge2;
+  glm::vec3 normal;
 };

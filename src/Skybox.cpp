@@ -1,20 +1,24 @@
 
 #include "Skybox.h"
 
-Skybox::Skybox(Color ntopColor, Color nsideColor, Color nbottomColor, bool noverride, Color noverrideColor, float nintensity, glm::vec3 nup) {
-	this->up = nup;
-	this->topColor = ntopColor;
-	this->sideColor = nsideColor;
-	this->bottomColor = nbottomColor;
-	this->override = noverride;
-	this->overrideColor = noverrideColor;
-	this->intensity = nintensity;
-}
-Color Skybox::getColorAt(glm::vec3 dir) {
-	if (this->override)return this->overrideColor;
-	float dot = glm::dot(this->up, dir);
-	if (dot < 0) {
-		return this->sideColor.interpolate(this->bottomColor, abs(dot)).multiply(this->intensity);
-	}
-	return this->sideColor.interpolate(this->topColor, dot).multiply(this->intensity);
+Skybox::Skybox(glm::vec3 ntopColor, glm::vec3 nsideColor,
+               glm::vec3 nbottomColor, bool noverride, glm::vec3 noverrideColor,
+               float nintensity, glm::vec3 nup)
+    : topColor(ntopColor),
+      sideColor(nsideColor),
+      bottomColor(nbottomColor),
+      override(noverride),
+      overrideColor(noverrideColor),
+      intensity(nintensity),
+      up(nup) {}
+
+glm::vec3 Skybox::getColorAt(glm::vec3 const& dir) {
+  if (this->override) return this->overrideColor;
+
+  float dot = glm::dot(this->up, dir);
+  if (dot < 0.0f)
+    return glm::mix(this->sideColor, this->bottomColor, std::abs(dot)) *
+           this->intensity;
+
+  return glm::mix(this->sideColor, this->topColor, dot) * this->intensity;
 }

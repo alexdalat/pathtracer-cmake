@@ -1,17 +1,22 @@
 #pragma once
 
+#include <glm/glm.hpp>
+
+#include "Material.h"
+#include "Object.h"
+#include "Ray.h"
+
 class Sphere : public Object {
-public:
-    glm::vec3 position;
-    float radius;
-    Material material;
+ public:
+  // inherits material and color from Object
+  float radius;
 
-    Sphere();
-    Sphere(glm::vec3 position, float radius, Material material);
+  Sphere(glm::vec3 const& position, float radius, Material const& material);
 
-    float calculateIntersection(Ray *ray);
-    glm::vec3 randomPoint();
-    glm::vec3 calculateNormal(glm::vec3 &point, glm::vec3 &dir);
-    Material getMaterial();
-    glm::vec3 calculateUVCoordinates(glm::vec3 collisionPoint, glm::vec3 normal);
+  float calculateIntersection(Ray const& ray) override;
+  glm::vec3 randomPoint() override;
+  glm::vec3 calculateNormal(glm::vec3 const& point,
+                            glm::vec3 const& dir) override;
+  glm::vec3 calculateUVCoordinates(glm::vec3 const& collisionPoint,
+                                   glm::vec3 const& normal) override;
 };

@@ -1,0 +1,626 @@
+[
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/context.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/context.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/init.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/init.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/input.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/input.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/monitor.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/monitor.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/vulkan.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/vulkan.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/window.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/window.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_init.m",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_init.m",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_joystick.m",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_joystick.m",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_monitor.m",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_monitor.m",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_window.m",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_window.m",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_time.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/cocoa_time.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/posix_thread.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/posix_thread.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/nsgl_context.m",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/nsgl_context.m",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/egl_context.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/egl_context.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/osmesa_context.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/src/osmesa_context.c",
+  "output": "_deps/glfw-src/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/boing.dir/boing.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/boing.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/boing.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/boing.dir/boing.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/boing.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/gears.dir/gears.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/gears.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/gears.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/gears.dir/gears.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/gears.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/heightmap.dir/heightmap.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/heightmap.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/heightmap.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/offscreen.dir/offscreen.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/offscreen.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/offscreen.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/offscreen.dir/offscreen.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/particles.dir/particles.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/particles.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/particles.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/particles.dir/particles.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/particles.dir/__/deps/tinycthread.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/particles.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/particles.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/sharing.dir/sharing.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/sharing.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/sharing.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/sharing.dir/sharing.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/simple.dir/simple.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/simple.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/simple.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/simple.dir/simple.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/simple.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/splitview.dir/splitview.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/splitview.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/splitview.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/splitview.dir/splitview.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/splitview.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/wave.dir/wave.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/wave.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples/wave.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/wave.dir/wave.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/wave.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/clipboard.dir/clipboard.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/clipboard.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/clipboard.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/clipboard.dir/clipboard.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/clipboard.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/events.dir/events.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/events.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/events.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/events.dir/events.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/events.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/events.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/events.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/msaa.dir/msaa.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/msaa.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/msaa.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/msaa.dir/msaa.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/msaa.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/msaa.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/glfwinfo.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/glfwinfo.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_vulkan.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_vulkan.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/iconify.dir/iconify.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/iconify.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/iconify.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/iconify.dir/iconify.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/iconify.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/iconify.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/monitors.dir/monitors.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/monitors.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/monitors.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/monitors.dir/monitors.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/monitors.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/monitors.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/reopen.dir/reopen.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/reopen.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/reopen.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/reopen.dir/reopen.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/reopen.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/cursor.dir/cursor.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/cursor.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/cursor.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/cursor.dir/cursor.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/cursor.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/empty.dir/empty.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/empty.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/empty.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/empty.dir/empty.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/empty.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/gamma.dir/gamma.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/gamma.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/gamma.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/gamma.dir/gamma.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/icon.dir/icon.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/icon.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/icon.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/icon.dir/icon.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/icon.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/inputlag.dir/inputlag.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/inputlag.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/inputlag.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/inputlag.dir/inputlag.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/inputlag.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/joysticks.dir/joysticks.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/joysticks.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/joysticks.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/opacity.dir/opacity.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/opacity.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/opacity.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/opacity.dir/opacity.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/tearing.dir/tearing.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/tearing.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/tearing.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/tearing.dir/tearing.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/tearing.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/threads.dir/threads.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/threads.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/threads.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/threads.dir/threads.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/tinycthread.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/timeout.dir/timeout.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/timeout.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/timeout.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/timeout.dir/timeout.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/timeout.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/title.dir/title.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/title.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/title.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/title.dir/title.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/title.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/triangle-vulkan.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/triangle-vulkan.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_vulkan.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_vulkan.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/windows.dir/windows.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/windows.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests/windows.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/windows.dir/windows.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/windows.dir/__/deps/getopt.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/getopt.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/windows.dir/__/deps/glad_gl.c.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/deps/glad_gl.c",
+  "output": "_deps/glfw-src/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Camera.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Camera.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Camera.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Camera.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Material.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Material.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Material.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Material.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Object.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Object.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Object.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Object.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Plane.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Plane.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Plane.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Plane.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Ray.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Ray.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Ray.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Ray.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Renderer.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Renderer.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Renderer.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Renderer.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Rotation.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Rotation.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Rotation.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Rotation.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Scene.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Scene.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Scene.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Scene.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Skybox.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Skybox.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Skybox.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Skybox.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Sphere.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Sphere.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Sphere.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Sphere.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/Triangle.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Triangle.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/Triangle.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/Triangle.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/main.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/main.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/main.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/util.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/util.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/util.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/util.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_draw.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_draw.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_draw.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_draw.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_widgets.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_widgets.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_widgets.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_tables.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_tables.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_tables.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_tables.cpp.o"
+},
+{
+  "directory": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/src/../include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glm-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glad-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/glfw-src/include -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src -I/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/backends -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_demo.cpp.o -c /Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_demo.cpp",
+  "file": "/Users/alexdalat/Documents/code/cpp/pathtracer-cmake/build/_deps/imgui-src/imgui_demo.cpp",
+  "output": "src/CMakeFiles/pathtracer-cmake.dir/__/_deps/imgui-src/imgui_demo.cpp.o"
+}
+]

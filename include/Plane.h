@@ -1,17 +1,22 @@
 #pragma once
 
+#include <glm/glm.hpp>
+
+#include "Material.h"
+#include "Object.h"
+#include "Ray.h"
+
 class Plane : public Object {
-public:
-    glm::vec3 position;
-    glm::vec3 normal;
-    Material material;
+ public:
+  glm::vec3 normal;
 
-    Plane();
+  Plane(glm::vec3 const& position, glm::vec3 const& normal,
+        Material const& material);
 
-    Plane(glm::vec3 position, glm::vec3 normal, Material material);
+  float calculateIntersection(Ray const& ray) override;
+  glm::vec3 calculateNormal(glm::vec3 const& point,
+                            glm::vec3 const& dir) override;
 
-    float calculateIntersection(Ray *ray);
-
-    glm::vec3 calculateNormal(glm::vec3 &point, glm::vec3 &dir);
-    Material getMaterial();
+ private:
+  float dnv1;
 };
