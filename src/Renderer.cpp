@@ -65,9 +65,11 @@ glm::vec3 Renderer::trace(Ray const& ray, int depth) {
     return material.color * material.emissive;
 }
 
-void Renderer::render(std::vector<glm::vec3>& pixels) {
+std::vector<glm::vec3> Renderer::render() {
   // start time
   auto start = std::chrono::high_resolution_clock::now();
+
+  std::vector<glm::vec3> pixels(this->width * this->height, glm::vec3(0.0f));
 
   if(this->ray_map.size() == 0 || this->random_map.size() == 0) this->init();
 
@@ -97,4 +99,5 @@ void Renderer::render(std::vector<glm::vec3>& pixels) {
                    std::chrono::high_resolution_clock::now() - start)
                    .count()
             << "ms\n";
+  return pixels;
 }

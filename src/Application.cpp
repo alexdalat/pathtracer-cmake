@@ -26,11 +26,7 @@ void main() {
 }
 )";
 
-Application::Application(int w, int h) : width(w), height(h) {
-  init();
-  setupTexture();
-  setupFramebuffer();
-}
+Application::Application(int w, int h) : width(w), height(h) {}
 
 Application::~Application() {
   glDeleteTextures(1, &textureID);
@@ -38,11 +34,11 @@ Application::~Application() {
   glDeleteVertexArrays(1, &vao);
 }
 
-void Application::init() {
+int Application::init() {
   // initialize GLFW
   if (!glfwInit()) {
     std::cerr << "Failed to initialize GLFW" << std::endl;
-    return;
+    return 1; // typically couldnt create window
   }
 
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -58,7 +54,7 @@ void Application::init() {
   if (!window) {
     std::cerr << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
-    return;
+    return 2;
   }
 
   // Make the window's context current
@@ -69,7 +65,7 @@ void Application::init() {
   int version = gladLoadGL(glfwGetProcAddress);
   if (version == 0) {
     printf("Failed to initialize OpenGL context\n");
-    return;
+    return 3;
   }
 
   std::cout << "Initalized GLAD" << std::endl;
@@ -77,6 +73,11 @@ void Application::init() {
   // Set callbacks
   glfwSetErrorCallback(error_callback);
   glfwSetKeyCallback(window, key_callback);
+
+  setupTexture();
+  setupFramebuffer();
+
+  return 0;
 }
 
 void Application::setupFramebuffer() {
@@ -113,6 +114,10 @@ void Application::setupFramebuffer() {
 }
 
 void Application::run(Renderer& renderer) {
+  if (!window) {
+    std::cerr << "Please initialize the application with init()." << std::endl;
+    return;
+  }
 
   // Load, compile, and link shaders (You need to implement these functions)
   GLuint vertexShader = compileShader(GL_VERTEX_SHADER, VERTEX_SHADER_SOURCE);
@@ -125,8 +130,7 @@ void Application::run(Renderer& renderer) {
   while (!glfwWindowShouldClose(window)) {
 
     // Update the texture with new data
-    std::vector<glm::vec3> pixels(width * height, glm::vec3(0.0f, 1.0f, 0.0f));
-    renderer.render(pixels);
+    std::vector<glm::vec3> pixels = renderer.render();
     
     this->updateTexture(pixels);
 

@@ -1,6 +1,5 @@
 #pragma once
 
-#include <OpenGL/OpenGL.h>
 #include <glad/gl.h>
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
@@ -28,6 +27,7 @@ class Application {
   Application(int w, int h);
   ~Application();
 
+  int init();
   void updateTexture(const std::vector<glm::vec3>& pixels);
   void run(Renderer& renderer);
 
@@ -36,9 +36,8 @@ class Application {
   GLuint vao, vbo;
   int width, height;
 
-  GLFWwindow* window;
+  GLFWwindow* window = nullptr;
 
-  void init();
   void setupTexture();
   void setupQuad();
   void setupFramebuffer();

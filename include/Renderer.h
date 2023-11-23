@@ -24,5 +24,5 @@ class Renderer {
 
   void init();
   glm::vec3 trace(Ray const& ray, int depth = 0);
-  void render(std::vector<glm::vec3>& pixels);
+  std::vector<glm::vec3> render();
 };

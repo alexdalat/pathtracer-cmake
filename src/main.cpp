@@ -66,13 +66,18 @@ int main() {
   //              glm::vec3(0, 0, 255) / 255.0f);
   scene.skybox = &skybox;
 
-  Application app(renderer.width, renderer.height);
-
   scene.setupScene(obj_path);
 
-  app.run(renderer);
-
-  scene.destroyScene();  // cleanup
+  Application app(renderer.width, renderer.height);
+  int status = app.init();
+  if(status != 0) {
+    std::cout << "Failed to initialize application, rendering without OpenGL." << std::endl;
+    while(true) {
+      std::vector<glm::vec3> null = renderer.render();
+    }
+  } else {
+    app.run(renderer);
+  }
 
   return 0;
 }
