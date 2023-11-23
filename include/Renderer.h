@@ -18,11 +18,12 @@ class Renderer {
 
   std::vector<glm::vec2> random_map;
   std::vector<Ray> ray_map;
+  std::vector<glm::vec3> random_ray_map;
 
   Renderer();
   Renderer(Scene& scene);
 
   void init();
-  glm::vec3 trace(Ray const& ray, int depth = 0);
+  glm::vec3 trace(Ray const& ray, int hash, int depth = 0);
   std::vector<glm::vec3> render();
 };

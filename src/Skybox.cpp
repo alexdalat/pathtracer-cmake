@@ -12,13 +12,16 @@ Skybox::Skybox(glm::vec3 ntopColor, glm::vec3 nsideColor,
       override(noverride),
       overrideColor(noverrideColor),
       intensity(nintensity),
-      up(nup) {}
+      up(nup) {
+  this->bsColor = this->bottomColor - this->sideColor;
+  this->tsColor = this->topColor - this->sideColor;
+}
 
 glm::vec3 Skybox::getColorAt(glm::vec3 const& dir) {
   if (this->override) return this->overrideColor;
 
   float dot = glm::dot(this->up, dir);
   if (dot < 0.0f)
-    return this->sideColor + (this->bottomColor - this->sideColor) * std::abs(dot);
-  return this->sideColor + (this->topColor - this->sideColor) * dot;
+    return this->sideColor + this->bsColor * std::abs(dot);
+  return this->sideColor + this->tsColor * dot;
 }

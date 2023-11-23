@@ -15,6 +15,9 @@ class Skybox {
   const glm::vec3 defaultColor =
       glm::vec3(255.0f, 105.0f, 180.0f) / 255.0f;  // hot pink
 
+  glm::vec3 bsColor;
+  glm::vec3 tsColor;
+
   Skybox(glm::vec3 topColor = glm::vec3(0.0f, 0.0f, 0.0f),
          glm::vec3 sideColor = glm::vec3(0.0f, 0.0f, 0.0f),
          glm::vec3 bottomColor = glm::vec3(0.0f, 0.0f, 0.0f),

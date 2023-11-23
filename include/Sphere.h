@@ -19,4 +19,6 @@ class Sphere : public Object {
                             glm::vec3 const& dir) override;
   glm::vec3 calculateUVCoordinates(glm::vec3 const& collisionPoint,
                                    glm::vec3 const& normal) override;
+ private:
+  float r2;
 };

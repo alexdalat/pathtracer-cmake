@@ -4,6 +4,7 @@ Sphere::Sphere(glm::vec3 const& position, float radius,
                Material const& material) {
   this->v1 = position;
   this->radius = radius;
+  this->r2 = radius * radius;
   this->material = material;
 }
 
@@ -11,7 +12,7 @@ float Sphere::calculateIntersection(Ray const& ray) {
   glm::vec3 oc = ray.origin - this->v1;
   float k1 = glm::dot(ray.direction, ray.direction);
   float k2 = 2 * glm::dot(oc, ray.direction);
-  float k3 = glm::dot(oc, oc) - this->radius * this->radius;
+  float k3 = glm::dot(oc, oc) - this->r2;
   float discriminant = k2 * k2 - 4 * k1 * k3;
   if (discriminant < 0) {
     return -1;
@@ -24,7 +25,8 @@ float Sphere::calculateIntersection(Ray const& ray) {
 }
 
 glm::vec3 Sphere::randomPoint() {
-  return Ray::random_in_unit_sphere() * this->radius;
+  //return Ray::random_in_unit_sphere() * this->radius;
+  return glm::vec3(0.0f); // not implemented, not used
 }
 
 glm::vec3 Sphere::calculateNormal(glm::vec3 const& point,
