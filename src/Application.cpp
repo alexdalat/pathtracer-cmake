@@ -126,11 +126,12 @@ void Application::run(Renderer& renderer) {
 
   std::cout << "Running" << std::endl;
 
+  std::vector<glm::vec3> pixels(width * height, glm::vec3(0.0f));
   // Main loop
   while (!glfwWindowShouldClose(window)) {
 
     // Update the texture with new data
-    std::vector<glm::vec3> pixels = renderer.render();
+    renderer.render(&pixels);
     
     this->updateTexture(pixels);
 

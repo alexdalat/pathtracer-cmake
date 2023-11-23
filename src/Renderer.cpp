@@ -53,16 +53,15 @@ glm::vec3 Renderer::trace(Ray const& ray, int hash, int depth) {
 
   if (material.emissive <= 0)
     return this->trace(Ray(point, ndir), ++hash, ++depth) * material.color *
-           (1.f - this->light_loss);
+           (1.0f - this->light_loss);
   else
     return material.color * material.emissive;
 }
 
-std::vector<glm::vec3> Renderer::render() {
+void Renderer::render(std::vector<glm::vec3> * const pixels) {
   // start time
   auto start = std::chrono::high_resolution_clock::now();
 
-  std::vector<glm::vec3> pixels(this->width * this->height, glm::vec3(0.0f));
 
   if (this->ray_map.size() == 0 || this->random_map.size() == 0) this->init();
 
@@ -70,14 +69,10 @@ std::vector<glm::vec3> Renderer::render() {
     for (int y = 0; y < this->height; y++) {
       glm::vec3 cols(0.0f);
 
+      int h = y * samples + x * this->height * samples;
       for (int s = 0; s < this->samples; s++) {
-        int hash = y * samples + x * this->height * samples + s;
-        Ray const& ray = ray_map.at(hash);
-        // float u = ((float)x + 0.5f) / (float)this->width;
-        // float v = ((float)y + 0.5f) / (float)this->height;
-        // Ray ray = this->scene->camera->getRay(u, v);
-        glm::vec3 col = this->trace(ray, hash + s);
-        cols += col;
+        int hash = h + s;
+        cols += this->trace(ray_map.at(hash), hash);
       }
 
       cols /= static_cast<float>(this->samples);
@@ -85,7 +80,7 @@ std::vector<glm::vec3> Renderer::render() {
 
       int pc = (this->height - y - 1) * this->width +
                x;  // flip y for opengl (draws bottom left)
-      pixels[pc] = cols;
+      pixels->at(pc) = cols;
       // pixels[pc] = glm::vec3((float)x / (float)this->width, (float)y /
       // (float)this->height, 0.2f); // testing
     }
@@ -95,5 +90,4 @@ std::vector<glm::vec3> Renderer::render() {
                    std::chrono::high_resolution_clock::now() - start)
                    .count()
             << "ms\n";
-  return pixels;
 }

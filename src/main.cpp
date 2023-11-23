@@ -72,8 +72,9 @@ int main() {
   int status = app.init();
   if(status != 0) {
     std::cout << "Failed to initialize application, rendering without OpenGL." << std::endl;
+    std::vector<glm::vec3> pixels(renderer.width * renderer.height, glm::vec3(0.0f));
     while(true) {
-      std::vector<glm::vec3> null = renderer.render();
+      renderer.render(&pixels);
     }
   } else {
     app.run(renderer);

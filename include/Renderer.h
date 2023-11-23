@@ -11,7 +11,7 @@ class Renderer {
   Scene* scene = nullptr;
 
   int width = 512, height = 512, samples = 250, recursion_depth = 8;
-  float light_loss = 0.2f, min_dist = 0.000001f, max_dist = 100.f;
+  float light_loss = 0.2f, min_dist = 0.01f, max_dist = 500.f;
 
   std::string img_dir = "../imgs/";
   std::string img_name = "image";
@@ -25,5 +25,5 @@ class Renderer {
 
   void init();
   glm::vec3 trace(Ray const& ray, int hash, int depth = 0);
-  std::vector<glm::vec3> render();
+  void render(std::vector<glm::vec3> * const pixels);
 };
