@@ -11,7 +11,6 @@ Plane::Plane(glm::vec3 const& position, glm::vec3 const& normal,
 float Plane::calculateIntersection(Ray const& ray) {
   float dnrd = glm::dot(this->normal, ray.direction);
   if (dnrd == 0) return -1;
-
   return (dnv1 - glm::dot(this->normal, ray.origin)) / dnrd;
 }
 

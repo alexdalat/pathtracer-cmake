@@ -9,6 +9,9 @@ install_manifest.txt
 /imgs/
 *build*/
 
+.cache/
+compile_commands.json
+
 
 ### C++ template
 # Compiled Object files

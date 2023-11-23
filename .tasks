@@ -2,7 +2,7 @@
 # see: https://github.com/skywind3000/asynctasks.vim/wiki/Task-Config
 
 [build]
-command=cmake -S . -B build -DFETCHCONTENT_QUIET=OFF -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_BUILD_TYPE=Debug && cmake --build build --target pathtracer-cmake -j4
+command=cmake -S . -B build -DFETCHCONTENT_QUIET=OFF -DCMAKE_BUILD_TYPE=Debug && cmake --build build --target pathtracer-cmake -j4
 cwd=<root>
 errorformat=%f:%l:%c: %m
 [build-release]

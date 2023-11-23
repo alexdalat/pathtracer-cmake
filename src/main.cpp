@@ -7,17 +7,16 @@
 #include <string>
 
 // project specific
-#include "util.h"
-
 #include "Application.h"
-#include "Plane.h"
-#include "Material.h"
 #include "Camera.h"
-#include "Skybox.h"
+#include "Material.h"
+#include "Plane.h"
 #include "Renderer.h"
-#include "Scene.h"
 #include "Rotation.h"
+#include "Scene.h"
 #include "Shapes.h"
+#include "Skybox.h"
+#include "util.h"
 //
 // // input paths
 const std::string obj_path = "../../extra/objs/";
@@ -41,8 +40,8 @@ T default_input(std::string var_name, T variable) {
 int main() {
   Renderer renderer;
   std::cout << "\n";
-  renderer.samples = default_input<int>("Samples", 100);
-  renderer.width = default_input<int>("Width", 256);
+  renderer.samples = default_input<int>("Samples", 5);
+  renderer.width = default_input<int>("Width", 512);
   renderer.height = default_input<int>("Height", renderer.width);
   renderer.recursion_depth = default_input<int>("Recursion", 2);
   renderer.light_loss = default_input<float>("Light loss", 0.2f);
@@ -56,10 +55,15 @@ int main() {
                 (float)renderer.height / (float)renderer.width, 180,
                 Rotation(0, 0, 0)  // normal: 0,0,0 | top-down: -M_PI/2,0,0
   );
+  camera.lookAt(glm::vec3(0, 0, 0));
   scene.camera = &camera;
 
-  Skybox skybox(glm::vec3(63, 178, 232)/255.0f, glm::vec3(225, 244, 252)/255.0f,
-                glm::vec3(225, 244, 252)/255.0f, true, glm::vec3(0, 0, 150)/255.0f);
+  Skybox skybox(
+      glm::vec3(63, 178, 232) / 255.0f, glm::vec3(225, 244, 252) / 255.0f,
+      glm::vec3(225, 244, 252) / 255.0f, false, glm::vec3(0, 0, 0) / 255.0f);
+  // red to blue to blue to green gradient skybox
+  // Skybox skybox(glm::vec3(255, 0, 0) / 255.0f, glm::vec3(0, 255, 0) / 255.0f,
+  //              glm::vec3(0, 0, 255) / 255.0f);
   scene.skybox = &skybox;
 
   Application app(renderer.width, renderer.height);

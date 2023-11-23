@@ -8,10 +8,10 @@ class Rotation {
   float pitch;
   float yaw;
   float roll;
-  glm::lowp_f32mat3 yawMat;
-  glm::lowp_f32mat3 pitchMat;
-  glm::lowp_f32mat3 rollMat;
-  glm::lowp_f32mat3 rotationMat;
+  glm::mat3 yawMat;
+  glm::mat3 pitchMat;
+  glm::mat3 rollMat;
+  glm::mat3 rotationMat;
 
   Rotation();
   Rotation(float pitch, float yaw, float roll);

@@ -16,6 +16,10 @@ Ray Camera::getRay(float x, float y) {
                 (y - 0.5f) * (this->fov / 180.0f) * this->aspectRatio, 1.0f);
 
   direction = rotation.rotationMat * direction;
+  //direction = direction * rotation.rollMat;
+  //direction = direction * rotation.pitchMat;
+  //direction = direction * rotation.yawMat;
+
   direction = glm::normalize(direction);
 
   return Ray(this->position, direction);

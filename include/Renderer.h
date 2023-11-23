@@ -16,8 +16,13 @@ class Renderer {
   std::string img_dir = "../imgs/";
   std::string img_name = "image";
 
-  Renderer(){};
+  std::vector<glm::vec2> random_map;
+  std::vector<Ray> ray_map;
 
+  Renderer();
+  Renderer(Scene& scene);
+
+  void init();
   glm::vec3 trace(Ray const& ray, int depth = 0);
   void render(std::vector<glm::vec3>& pixels);
 };

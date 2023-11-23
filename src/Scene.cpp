@@ -3,6 +3,7 @@
 #include "Plane.h"
 #include "Shapes.h"
 #include "Triangle.h"
+#include "Sphere.h"
 
 Scene::Scene() {}
 Scene::~Scene() { this->destroyScene(); }
@@ -33,9 +34,12 @@ Intersection Scene::castRay(Ray const& ray, float const min_dist,
 }
 
 void Scene::setupScene(std::string const& obj_path) {
-  this->addObject(
-      new Plane(glm::vec3(0.0, 0, 0.0), glm::vec3(0.0, 1.0, 0.0),
-                Material(0.0, 1.0, 0.0, glm::vec3(255.0, 255.0, 255.0)/255.0f)));
+  this->addObject(new Plane(
+      glm::vec3(0.0, 0, 0.0), glm::vec3(0.0, 1.0, 0.0),
+      Material(0.0, 1.0, 0.0, glm::vec3(255, 255, 255)/255.0f)));
+
+  this->addObject(new Sphere(glm::vec3(0, 1, 0), 1.0f,
+                             Material(0.0, 1.0, 0.0, glm::vec3(255,255,255)/255.0f)));
 
   /** Floor **/
   // auto floor = Rect(glm::vec3(5, 0, -5), glm::vec3(-5, 0, -5), glm::vec3(-5,
@@ -43,9 +47,10 @@ void Scene::setupScene(std::string const& obj_path) {
   // scene->addObjects(floor); // floor tile
 
   // Lights //
-  this->addObjects(Rect(glm::vec3(-3, 9.95, -3), glm::vec3(-3, 9.95, -1),
-                        glm::vec3(-1, 9.95, -1), glm::vec3(-1, 9.95, -3),
-                        Material(0.0, 0.0, 40.0, glm::vec3(253, 173, 92)/255.0f)));
+  //this->addObjects(
+  //    Rect(glm::vec3(-3, 9.95, -3), glm::vec3(-3, 9.95, -1),
+  //         glm::vec3(-1, 9.95, -1), glm::vec3(-1, 9.95, -3),
+  //         Material(0.0, 0.0, 1.0, glm::vec3(253, 173, 92) / 255.0f)));
 
   /*
   // Walls //
