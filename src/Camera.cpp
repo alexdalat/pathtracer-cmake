@@ -16,9 +16,9 @@ Ray Camera::getRay(float x, float y) {
                 (y - 0.5f) * (this->fov / 180.0f) * this->aspectRatio, 1.0f);
 
   direction = rotation.rotationMat * direction;
-  //direction = direction * rotation.rollMat;
-  //direction = direction * rotation.pitchMat;
-  //direction = direction * rotation.yawMat;
+  // direction = direction * rotation.rollMat;
+  // direction = direction * rotation.pitchMat;
+  // direction = direction * rotation.yawMat;
 
   direction = glm::normalize(direction);
 
@@ -33,3 +33,26 @@ void Camera::lookAt(const glm::vec3 &target) {
   this->rotation.updateYawMat();
   this->rotation.updateRotationMat();
 }
+
+// movement functions using controls enum
+void Camera::update(float deltaTime) {
+  if (this->controls.w) {
+    this->position += this->rotation.rotationMat * glm::vec3(0.0f, 0.0f, 1.0f) * moveSpeed;
+  }
+  if (this->controls.a) {
+    this->position += this->rotation.rotationMat * glm::vec3(-1.0f, 0.0f, 0.0f) * moveSpeed;
+  }
+  if (this->controls.s) {
+    this->position += this->rotation.rotationMat * glm::vec3(0.0f, 0.0f, -1.0f) * moveSpeed;
+  }
+  if (this->controls.d) {
+    this->position += this->rotation.rotationMat * glm::vec3(1.0f, 0.0f, 0.0f) * moveSpeed;
+  }
+  if (this->controls.q) {
+    this->position += this->rotation.rotationMat * glm::vec3(0.0f, -1.0f, 0.0f) * moveSpeed;
+  }
+  if (this->controls.e) {
+    this->position += this->rotation.rotationMat * glm::vec3(0.0f, 1.0f, 0.0f) * moveSpeed;
+  } 
+}
+

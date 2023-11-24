@@ -16,25 +16,21 @@ static void error_callback(int error, const char* description) {
   fprintf(stderr, "Error: %s\n", description);
 }
 
-static void key_callback(GLFWwindow* window, int key, int scancode, int action,
-                         int mods) {
-  if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-    glfwSetWindowShouldClose(window, GLFW_TRUE);
-}
 
 class Application {
  public:
-  Application(int w, int h);
+  Application(Renderer& renderer);
   ~Application();
+
+  Renderer& renderer;
 
   int init();
   void updateTexture(const std::vector<glm::vec3>& pixels);
-  void run(Renderer& renderer);
+  void run();
 
  private:
   GLuint textureID;
   GLuint vao, vbo;
-  int width, height;
 
   GLFWwindow* window = nullptr;
 
@@ -42,6 +38,8 @@ class Application {
   void setupQuad();
   void setupFramebuffer();
   void renderTexture();
+
+  static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
   GLuint compileShader(GLenum type, const std::string& source);
   GLuint createShaderProgram(GLuint vertexShader, GLuint fragmentShader);

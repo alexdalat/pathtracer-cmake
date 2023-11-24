@@ -26,6 +26,9 @@ class Camera {
   float aspectRatio;
   float fov;
   Controls controls;
+  float moveSpeed = 0.1f;
+
+  bool needUpdate = false;
 
   Camera(glm::vec3 position, float aspectRatio, float fov, Rotation rotation);
 

@@ -2,23 +2,30 @@
 
 void Renderer::init() {
   for (int i = 0; i < this->width * this->height * samples; i++) {
-    random_map.push_back(glm::vec2(util::random(), util::random()));
+    if (i < this->random_map.size()) continue;
 
-    for (int j = 0; j < this->recursion_depth; j++) {
-      random_ray_map.push_back(
-          glm::normalize(glm::vec3(util::random(), util::random(), util::random())));
-    }
+    glm::vec2 rand = glm::vec2(util::random(), util::random());
+    random_map.push_back(rand);
+    random_ray_map.push_back(glm::normalize(glm::vec3(rand.x, rand.y, util::random())));
   }
 
-  for(int x = 0; x < this->width; x++) {
-    for(int y = 0; y < this->height; y++) {
-      for(int s = 0; s < this->samples; s++) {
-        float u = ((float)x + util::random()) / (float)this->width;
-        float v = ((float)y + util::random()) / (float)this->height;
+  this->generateRays();
+}
+
+void Renderer::generateRays() {
+  ray_map.clear();
+  for (int x = 0; x < this->width; x++) {
+    for (int y = 0; y < this->height; y++) {
+      for (int s = 0; s < this->samples; s++) {
+        int hash = y * samples + x * this->height * samples + s;
+        glm::vec2& rand = random_map[hash % (this->width * this->height)];
+        float u = ((float)x + rand.x) / (float)this->width;
+        float v = ((float)y + rand.y) / (float)this->height;
         ray_map.push_back(this->scene->camera->getRay(u, v));
       }
     }
   }
+  this->scene->camera->needUpdate = false;
 }
 
 Renderer::Renderer() {}
@@ -43,7 +50,7 @@ glm::vec3 Renderer::trace(Ray const& ray, int hash, int depth) {
   Material& material = object->material;
 
   glm::vec3 ndir;
-  if (material.diffuse > 0) ndir = Ray::diffuse(normal, random_ray_map[hash]);
+  if (material.diffuse > 0) ndir = Ray::diffuse(normal, random_ray_map[hash + depth % this->width*this->height*this->samples]);
 
   if (material.reflectivity > 0) ndir = Ray::reflect(ray, normal);
 
@@ -52,18 +59,18 @@ glm::vec3 Renderer::trace(Ray const& ray, int hash, int depth) {
   //   ndir = diffuseDir;
 
   if (material.emissive <= 0)
-    return this->trace(Ray(point, ndir), ++hash, ++depth) * material.color *
+    return this->trace(Ray(point, ndir), hash, ++depth) * material.color *
            (1.0f - this->light_loss);
   else
     return material.color * material.emissive;
 }
 
-void Renderer::render(std::vector<glm::vec3> * const pixels) {
-  // start time
-  auto start = std::chrono::high_resolution_clock::now();
-
+void Renderer::render(std::vector<glm::vec3>* const pixels) {
 
   if (this->ray_map.size() == 0 || this->random_map.size() == 0) this->init();
+  
+  // this->scene->camera->needUpdate = true; for profiling
+  if(this->scene->camera->needUpdate) this->generateRays();
 
   for (int x = 0; x < this->width; x++) {
     for (int y = 0; y < this->height; y++) {
@@ -85,9 +92,5 @@ void Renderer::render(std::vector<glm::vec3> * const pixels) {
       // (float)this->height, 0.2f); // testing
     }
   }
-  std::cout << "Rendered " << this->width << "x" << this->height << " image in "
-            << std::chrono::duration_cast<std::chrono::milliseconds>(
-                   std::chrono::high_resolution_clock::now() - start)
-                   .count()
-            << "ms\n";
+
 }
