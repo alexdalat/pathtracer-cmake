@@ -1,6 +1,4 @@
 
-#include <cmath>
-#include <future>
 #include <glm/glm.hpp>
 #include <iostream>
 #include <sstream>
@@ -9,12 +7,9 @@
 // project specific
 #include "Application.h"
 #include "Camera.h"
-#include "Material.h"
-#include "Plane.h"
 #include "Renderer.h"
 #include "Rotation.h"
 #include "Scene.h"
-#include "Shapes.h"
 #include "Skybox.h"
 #include "util.h"
 //
@@ -51,7 +46,7 @@ int main() {
   Scene scene;
   renderer.scene = &scene;
 
-  Camera camera(glm::vec3(0, 3, 15),  // normal: 0, 5, 15 | top-down: 0, 15, 0
+  Camera camera(glm::vec3(0, 2, -5),  // normal: 0, 5, 15 | top-down: 0, 15, 0
                 (float)renderer.height / (float)renderer.width, 180,
                 Rotation(0, 0, 0)  // normal: 0,0,0 | top-down: -M_PI/2,0,0
   );
@@ -67,11 +62,19 @@ int main() {
 
   scene.setupScene(obj_path);
 
+  renderer.generateRandoms();
+  renderer.generateRays();
+
   Application app(renderer);
   int status = app.init();
   if (status != 0) {
     std::cout << "Failed to initialize application, rendering without OpenGL."
               << std::endl;
+    renderer.width = 1000;
+    renderer.height = 1000;
+    renderer.samples = 100;
+    renderer.jitter = 5;
+    renderer.recursion_depth = 8;
     std::vector<glm::vec3> pixels(renderer.width * renderer.height,
                                   glm::vec3(0.0f));
     while (true) {

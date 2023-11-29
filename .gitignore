@@ -12,6 +12,7 @@ install_manifest.txt
 .cache/
 compile_commands.json
 perf.data*
+imgui.ini
 
 
 ### C++ template

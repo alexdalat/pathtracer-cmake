@@ -14,8 +14,9 @@ Rotation::Rotation(float pitch, float yaw, float roll) {
 
 void Rotation::updatePitchMat() {
   pitchMat =
-      glm::mat3(1, 0, 0, 0, cos(pitch + M_PI), -sin(pitch + M_PI), 0,
-                        sin(pitch + M_PI), cos(pitch + M_PI));
+      glm::mat3(1, 0, 0,
+                0, cos(pitch), -sin(pitch),
+                0, sin(pitch), cos(pitch));
 }
 
 void Rotation::updateYawMat() {

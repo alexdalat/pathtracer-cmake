@@ -39,15 +39,15 @@ void Scene::setupScene(std::string const& obj_path) {
                 Material(0.0, 1.0, 0.0, glm::vec3(255, 255, 255) / 255.0f)));
 
   this->addObject(
-      new Sphere(glm::vec3(0, 1, 0), 1.0f,
+      new Sphere(glm::vec3(1.5, 1, 0), 1.0f,
                  Material(0.0, 1.0, 0.0, glm::vec3(255, 255, 125) / 255.0f)));
   
   this->addObject(
-      new Sphere(glm::vec3(2.5, 1, 0), 1.0f,
+      new Sphere(glm::vec3(-1.5, 1, 0), 1.0f,
                  Material(1.0, 0.0, 0.0, glm::vec3(255, 255, 255) / 255.0f)));
 
   this->addObject(
-      new Sphere(glm::vec3(1.5, 3, 0), 0.5f,
+      new Sphere(glm::vec3(0, 4, 1.0), 1.0f,
                  Material(0.0, 0.0, 15.0, glm::vec3(255, 255, 255) / 255.0f)));
 
   /** Floor **/

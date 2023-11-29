@@ -32,8 +32,12 @@ class Camera {
 
   Camera(glm::vec3 position, float aspectRatio, float fov, Rotation rotation);
 
-  Ray getRay(float x, float y);
+  glm::vec3 getRay(float const x, float const y);
   void lookAt(const glm::vec3 &target);
 
   void update(float deltaTime);
+
+ private:
+  float fov180;
+  float fov180aspectRatio;
 };

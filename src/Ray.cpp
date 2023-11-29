@@ -10,7 +10,7 @@
 // }
 
 glm::vec3 Ray::diffuse(glm::vec3 const& normal, glm::vec3 const& rand_vec) {
-  return glm::normalize(normal + (rand_vec * 2.0f - 1.0f));
+  return glm::normalize(normal + rand_vec);
 }
 
 glm::vec3 Ray::reflect(Ray const& ray, glm::vec3 const& normal) {

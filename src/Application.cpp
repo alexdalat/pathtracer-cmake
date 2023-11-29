@@ -61,7 +61,7 @@ int Application::init() {
 #endif
 
   // Create a GLFW window
-  window = glfwCreateWindow(1000, 1000, "pathtracer-cmake", NULL, NULL);
+  window = glfwCreateWindow(900, 900, "pathtracer-cmake", NULL, NULL);
   if (!window) {
     std::cerr << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
@@ -178,18 +178,26 @@ void Application::run() {
     ImGui::Checkbox("Continuous Render", &continuous_render);
 
     ImGui::SeparatorText("Renderer Settings");
-    if(ImGui::SliderInt("Samples", &renderer.samples, 1, 1000, "%d", ImGuiSliderFlags_Logarithmic)) renderer.init();
+    ImGui::SliderInt("Samples", &renderer.samples, 1, 1000, "%d", ImGuiSliderFlags_Logarithmic);
+
+    if(ImGui::SliderInt("Jitter", &renderer.jitter, 1, 100, "%d", ImGuiSliderFlags_Logarithmic))
+      renderer.generateRays();
+
     if(ImGui::SliderInt("Width/Height", &renderer.width, 5, 1000)) {
       renderer.height = renderer.width;
       pixels.resize(renderer.width * renderer.height);
-      renderer.init();
+      renderer.generateRays();
       this->setupTexture();
       ImGui::End(); ImGui::Render(); ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
       continue;
     }
+
+    if(ImGui::SliderInt("Random Map Size", (int*)&renderer.random_map_size, 1, 6480499, "%d", ImGuiSliderFlags_Logarithmic))
+      renderer.generateRandoms();
+
     ImGui::SliderInt("Recursion Depth", &renderer.recursion_depth, 1, 64, "%d", ImGuiSliderFlags_Logarithmic);
     ImGui::SliderFloat("Light Loss", &renderer.light_loss, 0.0f, 1.0f);
-    ImGui::SliderFloat("Min Distance", &renderer.min_dist, 0.0f, 1.0f);
+    ImGui::SliderFloat("Min Distance", &renderer.min_dist, 0.00001f, 1.0f, "%.5f", ImGuiSliderFlags_Logarithmic);
     ImGui::SliderFloat("Max Distance", &renderer.max_dist, 1.0f, 1000.0f, "%.1f", ImGuiSliderFlags_Logarithmic);
     
 
@@ -203,7 +211,6 @@ void Application::run() {
 
     // Clear the screen
     glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
 
     // Use the shader program
     glUseProgram(shaderProgram);
@@ -215,7 +222,6 @@ void Application::run() {
 
     // Bind the VAO and draw the quad
     glBindVertexArray(vao);
-    glDisable(GL_BLEND);
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     glBindVertexArray(0);
 
@@ -285,14 +291,16 @@ void Application::key_callback(GLFWwindow* window, int key, int scancode, int ac
 
 void Application::setupTexture() {
 
+  glDeleteTextures(1, &textureID);
+
   glGenTextures(1, &textureID);
   glBindTexture(GL_TEXTURE_2D, textureID);
 
   // Initialize texture
   glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, renderer.width, renderer.height, 0, GL_RGB, GL_FLOAT,
                NULL);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST); // change to GL_LINEAR for blending (better output), set to GL_NEAREST for truth
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
   glBindTexture(GL_TEXTURE_2D, 0);
 }
 
